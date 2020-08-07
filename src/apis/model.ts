@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 import accessToken from './accessToken';
 import env from './env';
 
-const MODEL_ID = '5R4X6KADPXRM53H4BCJLN324OU';
+const MODEL_ID = 'FRFPOUIOWOK7BO76ENW4PU2SSA';
 export default async (phrase: string) => {
   const token = await accessToken();
   const formData = new FormData();

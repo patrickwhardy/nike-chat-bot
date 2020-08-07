@@ -20,9 +20,10 @@ const start = async () => {
         res.status(500).send();
       }
     });
-    app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`));
+    app.listen(PORT, () => console.log(`Nike chat bot listening on port ${PORT}!`));
   } catch (error) {
     console.log(error);
   }
 };
+
 start();
