@@ -39,6 +39,7 @@
     "form-data": "^2.3.3",
     "jsonwebtoken": "^8.5.1",
     "node-fetch": "^2.3.0",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-beautiful-chat": "^2.5.0"
   }
 }
