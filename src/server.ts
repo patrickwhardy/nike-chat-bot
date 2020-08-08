@@ -6,7 +6,7 @@ const PORT = env.PORT;
 const start = async () => {
   try {
     const app = express();
-    app.get('/', async (req, res) => {
+    app.get('/answers', async (req, res) => {
       try {
         const { phrase } = req.query;
         if (phrase === undefined || phrase.trim() === '') {
@@ -20,6 +20,12 @@ const start = async () => {
         res.status(500).send();
       }
     });
+    app.get('/', async (req, res) => {
+      return res.sendFile('nike-soccer.html', { root: __dirname });
+    })
+    app.get('/components/main.js', async (req, res) => {
+      return res.sendFile('/components/main.js', { root: __dirname });
+    })
     app.listen(PORT, () => console.log(`Nike chat bot listening on port ${PORT}!`));
   } catch (error) {
     console.log(error);
