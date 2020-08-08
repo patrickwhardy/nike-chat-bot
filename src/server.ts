@@ -23,8 +23,8 @@ const start = async () => {
     app.get('/', async (req, res) => {
       return res.sendFile('nike-soccer.html', { root: __dirname });
     })
-    app.get('/components/main.js', async (req, res) => {
-      return res.sendFile('/components/main.js', { root: __dirname });
+    app.get('/bundle.js', async (req, res) => {
+      return res.sendFile('/bundle.js', { root: __dirname });
     })
     app.listen(PORT, () => console.log(`Nike chat bot listening on port ${PORT}!`));
   } catch (error) {

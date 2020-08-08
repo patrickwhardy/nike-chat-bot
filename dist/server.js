@@ -36,8 +36,8 @@ const start = () => __awaiter(this, void 0, void 0, function* () {
         app.get('/', (req, res) => __awaiter(this, void 0, void 0, function* () {
             return res.sendFile('nike-soccer.html', { root: __dirname });
         }));
-        app.get('/components/main.js', (req, res) => __awaiter(this, void 0, void 0, function* () {
-            return res.sendFile('/components/main.js', { root: __dirname });
+        app.get('/bundle.js', (req, res) => __awaiter(this, void 0, void 0, function* () {
+            return res.sendFile('/bundle.js', { root: __dirname });
         }));
         app.listen(PORT, () => console.log(`Nike chat bot listening on port ${PORT}!`));
     }

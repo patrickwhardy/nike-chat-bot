@@ -9,11 +9,18 @@
 <body data-sq-exempt style=overflow:auto class=mouse-focus>
 
 <!-- Add custom chat bot widget to page -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div id="chat-bot">
     <chat-bot></chat-bot>
 </div>
-<script type="text/javascript" src="/components/main.js"></script>
+<style>
+    .chat-bot {
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+<script type="text/javascript" src="bundle.js"></script>
 
 <iframe title style=width:0px;height:0px;border:0px;display:none data-single-file-win-id=0.0 hidden></iframe>
  
