@@ -20,7 +20,6 @@ export default async () => {
     exp: payloadExpiration,
     sub: env.EINSTEIN_VISION_ACCOUNT_ID,
   };
-  // TODO: PEM routine thing getting f'd here
   const token = jwt.sign(
     payload,
     env.EINSTEIN_VISION_PRIVATE_KEY,

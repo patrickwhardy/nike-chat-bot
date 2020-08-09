@@ -30,7 +30,6 @@ exports.default = () => __awaiter(this, void 0, void 0, function* () {
         exp: payloadExpiration,
         sub: env_1.default.EINSTEIN_VISION_ACCOUNT_ID,
     };
-    // TODO: PEM routine thing getting f'd here
     const token = jsonwebtoken_1.default.sign(payload, env_1.default.EINSTEIN_VISION_PRIVATE_KEY, { algorithm: 'RS256' });
     const response = yield node_fetch_1.default(`${env_1.default.EINSTEIN_VISION_URL}v2/oauth2/token`, {
         body: `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=${token}`,

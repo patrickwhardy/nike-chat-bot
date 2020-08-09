@@ -14,31 +14,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const env_1 = __importDefault(require("./apis/env"));
 const model_1 = __importDefault(require("./apis/model"));
-const mockResponse = {
-    probabilities: [
-        {
-            probability: 0.5205156,
-            label: "Shipping Info"
-        },
-        {
-            probability: 0.1776938,
-            label: "Order Change"
-        },
-        {
-            probability: 0.11082061,
-            label: "Billing"
-        },
-        {
-            probability: 0.09835051,
-            label: "Password Help"
-        },
-        {
-            probability: 0.092619486,
-            label: "Sales Opportunity"
-        }
-    ],
-    object: "predictresponse"
-};
 const PORT = env_1.default.PORT;
 const start = () => __awaiter(this, void 0, void 0, function* () {
     try {
@@ -57,7 +32,6 @@ const start = () => __awaiter(this, void 0, void 0, function* () {
                 console.log(error);
                 res.status(500).send();
             }
-            // res.send(mockResponse);
         }));
         app.get('/', (req, res) => __awaiter(this, void 0, void 0, function* () {
             return res.sendFile('nike-soccer.html', { root: __dirname });

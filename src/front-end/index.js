@@ -4,6 +4,4 @@ import ChatBot from './components/chat-bot.vue';
 
 Vue.use(Chat);
 Vue.component('chat-bot', ChatBot);
-new Vue({
-    el: `#chat-bot`
-})
+new Vue({ el: `#chat-bot` });
