@@ -5,4 +5,4 @@ This project uses a Vue-based chat component on a copy of Nike's e-commerce site
 # Demo
 Check out the live version [here](https://nike-chat-bot.herokuapp.com/).
 
-![](http://g.recordit.co/F9Dsf1QoyK.gif)
+![](http://g.recordit.co/lmivsaRmKt.gif)
